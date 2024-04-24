@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
 
 import '../../../consts/data.dart';
 import '../../../models/experience_model.dart';
@@ -15,10 +16,12 @@ class Education extends StatelessWidget {
           // const SizedBox(
           //   height: 20,
           // ),
-          const Center(
-            child: Icon(
-              Icons.auto_stories_rounded,
-              size: 100,
+          Center(
+            child: Lottie.asset(
+              "assets/lottie/education-lottie.json",
+              height: 240,
+              width: 240,
+              fit: BoxFit.cover,
             ),
           ),
           const SizedBox(
@@ -48,16 +51,6 @@ class Education extends StatelessWidget {
               children: experience.bulletPoints.map((bulletPoint) {
                 return ListTile(
                   contentPadding: const EdgeInsets.symmetric(horizontal: 15.0),
-                  // leading: const Icon(Icons.arrow_right),
-                  // title: Text(bulletPoint),
-                  // contentPadding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  // leading: Container(
-                  //   width: 5,
-                  //   height: 5,
-                  //   decoration: BoxDecoration(
-                  //       borderRadius: BorderRadius.circular(100),
-                  //       color: Colors.black),
-                  // ),
                   title: Row(
                     children: [
                       const SizedBox(

@@ -6,6 +6,7 @@ import 'package:custom_button_builder/custom_button_builder.dart';
 import 'package:device_frame/device_frame.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -110,7 +111,7 @@ class HomePage extends StatelessWidget {
                                                 padding:
                                                     const EdgeInsets.all(10),
                                                 child: AutoSizeText(
-                                                  'HighCoder',
+                                                  'Imran B',
                                                   style: GoogleFonts.exo(
                                                       fontSize: 35,
                                                       color: Colors.white,
@@ -140,9 +141,7 @@ class HomePage extends StatelessWidget {
                                 ..rotateY(-0.07),
                               alignment: Alignment.topCenter,
                               child: FrostedWidget(
-                                onPressed: () {
-                                  currentState.launchInBrowser(topMate);
-                                },
+                                onPressed: () {},
                                 childW: Center(
                                   child: Container(
                                     padding: const EdgeInsets.all(10),
@@ -150,8 +149,8 @@ class HomePage extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        Image.asset(
-                                          "assets/icons/topMate.png",
+                                        SvgPicture.asset(
+                                          "assets/icons/code.svg",
                                           width: 50 *
                                               theme.widthRatio *
                                               theme.heightRatio,
@@ -281,7 +280,7 @@ class HomePage extends StatelessWidget {
                                             MainAxisAlignment.center,
                                         children: [
                                           AutoSizeText(
-                                            '"Don\'t run after success run after perfection success will follow."',
+                                            '"I live in the present with an eye on the future"',
                                             style: GoogleFonts.inter(
                                                 // fontSize: 30,
                                                 color: Colors.white,
@@ -293,7 +292,7 @@ class HomePage extends StatelessWidget {
                                           Align(
                                               alignment: Alignment.bottomRight,
                                               child: AutoSizeText(
-                                                '-Baba Ranchhoddas',
+                                                '-MS Dhoni',
                                                 style: GoogleFonts.inter(
                                                     // fontSize: 12,
                                                     color: Colors.white
